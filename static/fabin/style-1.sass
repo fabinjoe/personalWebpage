@@ -1,0 +1,306 @@
+$accent1: #000000;
+$accent2: white;
+$font: 'Barlow', sans-serif;
+$accentGold: #d9b800;
+$accentGoldDark: #877300;
+$accentGoldLight: #fff1a3;
+
+$blueLight: #8591ff;
+$blueDark: #000957;
+$redLight: #ff8585;
+$redDark: #570000;
+$yellowLight: #ffeb85;
+$yellowDark: #4f4200;
+
+body, html
+  height: auto;
+
+.none
+  display: none;
+
+p::selection, img::selection, a::selection
+  background-color: $accent1;
+  color: $accent2;
+
+.title::selection, .content::selection, .head::selection, .more-info::selection
+  background-color: $accent1;
+  color: $accent2;
+
+footer p::selection, footer img::selection
+  background-color: $accent2;
+  color: $accent1;
+
+@media only screen and (max-width: 740px) 
+  .boo 
+    background-color: lightblue;
+
+  header .header
+    font-size: 6.8vw;
+
+  footer img
+    margin-left: 9vw;
+    padding: 0vw;
+
+  footer form label
+    font-size: 2.4vw;
+
+  .none-sm
+    display: none;
+
+@media only screen and (min-width: 741px)
+  header .header
+    font-size: 10vh;
+
+  footer img
+    margin-left: 1vw;
+
+
+header
+  background: url(background/parallax.png);
+  background-repeat: no-repeat;
+  background-size: 100% auto;
+  background-attachment: fixed;
+  height: auto;
+  margin-bottom: 0px;
+  padding: 0px;
+  padding-bottom: 1px;
+  padding-top: 2%;
+  
+  .header
+    margin-left: 5%;
+    margin-right: 5%;
+    height: auto;
+
+  .head
+    padding: 10px;
+    padding-top: 0px;
+    padding-bottom: 0px;
+    color: $accent1;
+    background-color: $accent2;
+    font-family: $font;
+    font-weight: bolder;
+
+  .content
+    background: lighten($accent1, 60%);
+    opacity: 70%;
+    padding-top: 1.3vw;
+    padding-bottom: 1.3vw;
+    padding-right: 5%;
+    padding-left: 5%;
+    height: auto;
+    font-family: $font;
+    font-size: 1.8vw;
+    font-weight: bolder;
+    margin-top: 20px;
+  
+    p
+      margin-bottom: 0px;
+      line-height: 2.1vw;
+
+    .float-right
+      float: right;
+    
+
+
+#nav 
+  background-color: $accent1;
+  color: $accent1;
+
+  .navbar-nav
+    width: 100%;
+
+  .nav-link
+    font-weight: bold;
+
+  .nav-item
+    background-color: gray;
+    margin-right: 1%;
+    width: 18vw;
+    text-align: center;
+    font-size: 1.5vw; 
+
+  #linkf
+    width: 4vw;
+    background-color: $accentGold;
+    color: $accentGoldLight;
+  
+  #link0
+    padding-left: 0px;
+    padding-top: 10px;
+    padding: 0px;
+    font-size: 2.4vw;
+    height: 100%;
+    vertical-align: center;
+    background-color: $accentGold;
+    color: $accentGoldLight;
+
+  #link0:hover
+    background-color: $accentGoldDark;
+    color: $accentGold;
+
+  #link0::selection
+    background-color: $accentGoldDark;
+
+  #link1:hover, #link2:hover, #link3:hover, #link4:hover, #link5:hover
+    background-color: #595958;
+    color: #bababa;
+  
+.division1
+  background: url(background/parallax.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  height: 15px;
+
+.division2
+  height: 10px;
+  width: 100%;
+  background-color: black;
+
+#featured
+  background: url(background/gold.jpg);
+  background-size: cover; 
+
+  .title
+    background: rgba(135, 115, 0, 0.7);
+  .head
+    padding-top: 0px;
+    font-family: $font;
+    font-weight: bold;  
+    font-size: 25px;
+  p
+    font-family: $font;
+    font-size: 17px;
+  .title::selection, .head::selection, p::selection, a::selection, u::selection, img::selection
+    background-color: $accentGoldDark;
+    color: $accent2;
+  a:hover
+    color: $accentGoldDark;
+
+.section
+  font-family: $font;
+  font-size: 17px;
+  background: url(background/white.jpg);
+  background-size: 100% auto;
+
+  .title
+    background: rgba(130, 133, 131, 0.7);
+    font-size: 40px;
+    font-family: $font;
+    font-weight: bolder;
+    padding-left: 5%;
+    padding-right: 5%;
+  .content
+    width: 100%;
+    padding: 10px;
+    padding-right: 5%;
+    padding-left: 5%;
+  a
+    font-weight: bold;
+    color: $accent1;
+  a:hover
+    color: lighten($accent1, 40%);
+  a::selection
+    color: $accent2;
+    background-color: $accent1;
+
+#projects
+  .project-item
+    margin: 10px;
+    border-bottom: 2px dashed black;
+    padding-bottom: 4px;
+  .project-head
+    font-weight: bolder;
+    font-size: 27px;
+  .p-item
+    margin-right: 5px;
+    padding-right: 10px;
+    padding-left: 10px;
+    padding-top: 1px;
+    padding-bottom: 1px;  
+    border-radius: 10px;
+    border: 2px solid;
+    font-size: 13px;
+  .b
+    background-color: $blueLight;
+    border-color: $blueDark;
+    color: $blueDark;
+  .r
+    background-color: $redLight;
+    border-color: $redDark;
+    color: $redDark;
+  .y
+    background-color: $yellowLight;
+    border-color: $yellowDark;
+    color: $yellowDark;
+
+  .project-head::selection, .project-description::selection
+    background-color: $accent1;
+    color: $accent2;
+  
+  .project-languages::selection, .p-item::selection
+    -webkit-touch-callout: none; /* iOS Safari */
+    -webkit-user-select: none; /* Safari */
+    -khtml-user-select: none; /* Konqueror HTML */
+    -moz-user-select: none; /* Old versions of Firefox */
+    -ms-user-select: none; /* Internet Explorer/Edge */
+    user-select: none;
+  
+  .b:hover
+    background-color: $blueDark;
+    color: $blueLight;
+  .r:hover
+    background-color: $redDark;
+    color: $redLight;
+  .y:hover
+    background-color: $yellowDark;
+    color: $yellowLight;
+
+#qualifications
+  p
+    margin-bottom: 0px;
+    padding-left: 15px;
+    padding-right: 15px;
+    margin-bottom: 10px;
+  .head
+    font-family: $font;
+    font-weight: bold;
+    font-size: 27px;
+  b::selection, i::selection, br::selection
+    background-color: $accent1;
+    color: $accent2;
+  img
+    width: 95%;
+  .row
+    padding-left: 30px;
+    margin-bottom: 10px;
+  .col-1
+    padding: 0px;
+  img:hover
+    width: 100%;
+  
+footer
+  background-color: $accent1;
+  color: $accent2;
+  padding: 5%;
+  font-family: $font;
+  padding-top: 10px;
+  font-weight: bolder;
+  text-align: center;
+  
+  .contact-head
+    font-size: 3vw;
+  div.contact-items
+    padding-right: 1%;
+  .row
+    text-align: center;
+    margin: 3px;
+  img
+    width: 30px;
+    height: 30px;
+  #mail
+    width: 28px;
+    height: 28px;
+    outline-color: white;
+    outline-width: 2px;
+    outline-style: solid;
