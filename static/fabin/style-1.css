@@ -36,12 +36,21 @@ footer p::selection, footer img::selection {
   color: #000000;
 }
 
-@media only screen and (max-width: 740px) {
+@media only screen and (max-width: 768px) {
   .boo {
     background-color: lightblue;
   }
   header .header {
     font-size: 6.8vw;
+  }
+  header .content {
+    font-size: 15px;
+  }
+  .section .title {
+    font-size: 6.8vw;
+  }
+  .section .head {
+    font-size: 17px;
   }
   footer img {
     margin-left: 9vw;
@@ -55,7 +64,7 @@ footer p::selection, footer img::selection {
   }
 }
 
-@media only screen and (min-width: 741px) {
+@media only screen and (min-width: 769px) {
   header .header {
     font-size: 10vh;
   }
